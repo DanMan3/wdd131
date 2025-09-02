@@ -1,0 +1,253 @@
+:root {
+    --text-color: #F4F6F8;
+    --text-active: #CEA135;
+    /* --text-secondary: rgb(236, 236, 236); */
+    --accent-1: #4a6e8a;
+    --accent-2: #B33A00;
+    --accent-3: #535f6a;
+    --off-white: #f4f4f4;
+    /* --primary-text: #ffffff;
+    --secondary-text: rgb(13, 13, 215); */
+    --heading-font: sans-serif;
+    --body-font: 'Roboto', sans-serif;
+}
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--heading-font);
+}
+
+header {
+    background-color: var(--accent-1);
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    box-shadow: 0px 3px 10px 1px rgb(0 0 0 / 0.3);
+
+}
+
+body {
+    margin: 0;
+}
+
+header span,
+footer p {
+    text-align: center;
+}
+
+main {
+    justify-self: center;
+
+    margin-bottom: 8px;
+}
+
+footer {
+    background-color: var(--accent-1);
+    color: var(--text-color);
+    padding: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px -3px 10px 1px rgb(0 0 0 / 0.3);
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+header span {
+    display: block;
+}
+
+nav {
+    display: flex;
+    justify-content: right;
+    background-color: var(--accent-3);
+    padding: 0.5rem;
+    align-items: center;
+    font-weight: bold;
+}
+
+nav a {
+    padding: 0.3rem;
+    font-size: 0.8rem;
+}
+
+.nav-links a:hover {
+    /* background-color: var(--text-color); */
+    border-bottom-color: var(--text-active);
+    color: var(--text-active);
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 15px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    border-bottom: 2px solid transparent;
+}
+
+.card {
+    padding-bottom: 1rem;
+    border-radius: 1rem;
+    background-color: var(--off-white);
+    box-shadow: 0 0 10px 1.5px rgb(0 0 0 / 0.2);
+    overflow: hidden;
+}
+
+.card-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+}
+
+.card-content p,
+.card-content li {
+    font-family: var(--body-font);
+}
+
+.about-me {
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    display: grid;
+}
+
+.info-utah {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.main-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0.5rem;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: var(--text-color);
+}
+
+h2 {
+    color: var(--text-color);
+}
+
+.main-h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.main-h2 {
+    background-color: var(--accent-1);
+    color: var(--text-color);
+    font-family: var(--heading-font);
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0;
+    padding: 0.2rem;
+    font-size: 1.2rem;
+}
+
+.main-h3 {
+    color: var(--accent-1);
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 0;
+}
+
+.last-modified {
+    margin-top: 0.3rem;
+    font-size: 12px;
+}
+
+.last-modified-date {
+    font-family: var(--heading-font);
+    font-style: italic;
+}
+
+.parent-container {
+    margin: auto;
+    max-width: 840px;
+}
+
+ul {
+    padding-left: 1rem;
+}
+
+.footer-nav {
+    justify-content: center;
+    font-size: 14px;
+}
+
+.copyright {
+    color: var(--text-color);
+}
+
+.copyright-wrapper {
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+
+.copyright-wrapper p {
+    margin: 0;
+    font-size: 11px;
+}
+
+img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.separator {
+    height: 1px;
+    background-color: #f4f6f894;
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    border-radius: 2px;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.image-separator {
+    background-color: #6a6a6a5e;
+    margin-top: 0.1rem;
+}
+
+.image-date {
+    font-size: 0.6rem;
+    font-style: italic;
+    color: var(--accent-3);
+    margin-top: 0.3rem;
+    text-align: center;
+}
+
+.info-text {
+    margin-top: 0;
+    font-size: 14px;
+}
+
+.utah-image {
+    align-self: center;
+}
+
+.about-daniel {
+    margin: 0;
+}
+
+.utah-separator {
+    margin-bottom: 10px;
+}
