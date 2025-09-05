@@ -1,0 +1,24 @@
+header,
+main,
+footer {
+    background-color: rgba(16, 122, 243, 0.204);
+    border: 0.1px solid rgba(16, 122, 243, 0.09);
+    margin: 1rem auto;
+    padding: 5px;
+    max-width: 640px;
+}
+
+body {
+    font-family: 'Roboto', 'sans-serif';
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+section {
+    padding: 1rem;
+    background-color: #fff;
+}
