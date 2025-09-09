@@ -1,5 +1,5 @@
 
-// Dynamica copywrite year in footer
+// Dynamic copywrite year in footer
 const today = new Date();
 const currentYear = document.getElementById('current-year');
 if (currentYear) {

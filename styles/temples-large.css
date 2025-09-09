@@ -1,0 +1,51 @@
+@media (min-width: 37.5rem) {
+
+
+
+
+    main {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: row;
+        position: unset;
+        gap: 15px;
+        margin-top: unset;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    h2 {}
+
+    .menu-button {
+        display: none;
+    }
+
+    .temple-pics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-name,
+    .last-modified,
+    .copyright {
+        font-size: 10px;
+    }
+
+    header {
+        margin-bottom: 0.3rem;
+    }
+}
