@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Charlotte, NC | WDD 131</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <meta name="description" content="A page that gives facts and information about Charlotte, NC, USA">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/getdates.js"></script>
+    <script defer src="scripts/place.js"></script>
+</head>
+
+
+<body>
+
+    <div class="parent-container">
+
+        <header>
+            <h1>Charlotte, North Carolina</h1>
+        </header>
+
+        <main>
+
+            <div class="main-content">
+                <picture class="hero">
+                    <source srcset="images/hero_medium.webp" media="(min-width: 1000px)">
+                    <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                    <img src="images/hero_default.webp" alt="Hero image of Charlotte, North Carolina">
+                </picture>
+
+
+                <div class="data">
+                    <h2>Data</h2>
+                    <p><strong>Area:</strong> 305 square miles</p>
+                    <p><strong>Population:</strong> 874,579</p>
+                    <p><strong>Languages:</strong> English, Spanish</p>
+                    <p><strong>Currency:</strong> USD ($)</p>
+                    <p><strong>Time Zone:</strong> Eastern Time Zone (ET)</p>
+                    <p><strong>Calling Code:</strong> +1 (704)</p>
+                    <p><strong>Internet TLD:</strong> .us</p>
+                </div>
+
+
+                <div class="info-wrapper">
+                    <div class="weather">
+                        <h2>Weather</h2>
+                        <img src="images/weather_clouds.svg" alt="Weather icon" class="weather-icon">
+                        <p><strong>Temperature:</strong> <span class="temp-value">42°F</span></p>
+                        <p><strong>Conditions:</strong>Partly cloudy</p>
+                        <p><strong>Wind:</strong> <span class="wind-value">10 mph SW</span></p>
+                        <p><strong>Wind Chill:</strong> <span id="wind-chill">A value</span></p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <div class="copyright-wrapper">
+                <p class="copyright">©<span id="current-year" class="current-year"></span></p>
+                <span class="dot-seperator">&#x2022;</span>
+                <p class="footer-name">Daniel Bennion Utah, USA</p>
+                <span class="dot-seperator">&#x2022;</span>
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+
+
+</html>
