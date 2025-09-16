@@ -1,0 +1,80 @@
+:root {
+    --bg: #f4f4f4;
+    --max-width: 420px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, Segoe UI, Roboto, Arial;
+}
+
+body {
+    background: var(--bg);
+    color: #111;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+}
+
+main {
+    width: 100%;
+    max-width: var(--max-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.img-wrap {
+    width: 100%;
+    background: #000;
+    display: block;
+    padding: 0.25rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.lazy-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    min-height: 600px;
+    object-fit: cover;
+    opacity: 0;
+    will-change: opacity, transform;
+}
+
+.lazy-img.loaded {
+    animation: fadeFromBlack 800ms ease forwards;
+}
+
+@keyframes fadeFromBlack {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    width: 100%;
+    max-width: var(--max-width);
+    text-align: center;
+    color: #444;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}

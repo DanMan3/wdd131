@@ -1,0 +1,68 @@
+@media (min-width: 37.5rem) {
+
+
+
+
+    main {
+        padding-left: unset;
+        padding-right: unset;
+    }
+
+    nav {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .navigation {
+        flex-direction: row;
+        position: unset;
+        gap: 15px;
+        margin-top: unset;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        margin-left: 10px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .temple-pics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-name,
+    .last-modified,
+    .copyright {
+        font-size: 10px;
+    }
+
+    header {
+        margin-bottom: 0.3rem;
+    }
+
+    /* Temple cards */
+    .card-temple-details {
+        font-weight: normal;
+        color: var(--card-text);
+        font-size: 0.70rem;
+        padding-bottom: 4px;
+    }
+
+    .card-temple-details span {
+        font-weight: 700;
+        font-size: 0.90rem;
+    }
+
+    .card-h3 {
+        font-family: var(--secondary-font);
+        color: var(--card-text);
+        font-size: 1.5rem;
+    }
+}

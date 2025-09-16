@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album</title>
+    <meta name="description"
+        content="An album with pictures of temples from the Church of Jesus Christ of Latter-Day Saints">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="page-width">
+        <header>
+            <h1>Temple Album</h1>
+
+            <nav>
+                <button class="menu-button" aria-label="Toggle navigation menu"></button>
+                <ul class="navigation">
+                    <li><a href="#" id="old">Old</a></li>
+                    <li><a href="#" id="new">New</a></li>
+                    <li><a href="#" id="large">Large</a></li>
+                    <li><a href="#" id="small">Small</a></li>
+                    <li><a href="#" id="home">Home</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h2>Temples</h2>
+            <div class="temple-pics">
+
+            </div>
+        </main>
+
+        <footer>
+            <div class="copyright-wrapper">
+                <p class="copyright">©<span id="current-year" class="current-year"></span></p>
+                <span>&#x2022;</span>
+                <p class="footer-name">Daniel Bennion Utah, USA</p>
+                <span>&#x2022;</span>
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
