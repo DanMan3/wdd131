@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publish Feedback</title>
+    <meta name="description" content="Publish your review on our products.">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page-width">
+        <header>
+            <h1>Product Review</h1>
+        </header>
+
+        <main>
+
+            <form action="review.html" method="get">
+
+                <div class="form-flexbox">
+                    <div class="reviews">
+                        <label for="product-name" class="product-name-label">Product Name<b>*</b></label>
+                        <select name="product-name" id="product-name" required>
+                            <option value="" disabled selected>Select a Product...</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="star-rating">
+                        <legend>Overall Rating</legend>
+                        <div class="star">
+                            <label for="one-star">☆</label>
+                            <input type="radio" name="rating" id="one-star" value="1" required>
+                        </div>
+
+                        <div class="star">
+                            <label for="two-star">☆☆</label>
+                            <input type="radio" name="rating" id="two-star" value="2">
+                        </div>
+
+                        <div class="star">
+                            <label for="three-star">☆☆☆</label>
+                            <input type="radio" name="rating" id="three-star" value="3">
+                        </div>
+
+                        <div class="star">
+                            <label for="four-star">☆☆☆☆</label>
+                            <input type="radio" name="rating" id="four-star" value="4">
+                        </div>
+
+                        <div class="star">
+                            <label for="five-star">☆☆☆☆☆</label>
+                            <input type="radio" name="rating" id="five-star" value="5">
+                        </div>
+                    </fieldset>
+
+                    <div class="reviews">
+                        <label for="date" class="date-of-installation-label">Date of Installation<b>*</b></label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                    <fieldset class="features">
+                        <legend>What features did you find useful in the program? <i>(Check all
+                                that apply)</i>
+                        </legend>
+                        <label><input type="checkbox" id="durability" name="features-checkbox"> Durability</label>
+                        <label><input type="checkbox" id="performance" name="features-checkbox"> Performance</label>
+                        <label><input type="checkbox" id="design" name="features-checkbox"> Design</label>
+                        <label><input type="checkbox" id="ease-of-use" name="features-checkbox"> Ease of Use</label>
+                    </fieldset>
+
+                    <div class="reviews">
+                        <label for="written-review" class="written-review-label">Written Review</label>
+                        <textarea name="written-review" id="written-review"></textarea>
+                    </div>
+
+                    <div class="reviews">
+                        <label for="user-name" class="user-name-label">Your Name</label>
+                        <input type="text" id="user-name" name="user-name">
+                    </div>
+
+                    <b class="required-text">required *</b>
+
+                    <input type="submit" value="Publish Review" id="publish-review">
+
+                </div>
+            </form>
+
+        </main>
+        <footer>
+            <div class="copyright-wrapper">
+                <p class="copyright">©<span id="current-year" class="current-year"></span></p>
+                <span class="dot-seperator">&#x2022;</span>
+                <p class="footer-name">Daniel Bennion Utah, USA</p>
+                <span class="dot-seperator">&#x2022;</span>
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
