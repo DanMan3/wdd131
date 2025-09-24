@@ -1,0 +1,141 @@
+:root {
+    --primary: #0b5a3a;
+    --accent: #c5a212;
+    --button: #205cccdf;
+    --bg: #ffffff;
+    --text: #222222;
+    --muted: #6b6b6b;
+    --heading-font: "Oswald", sans-serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body-font);
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    border-radius: 8px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    margin: 0;
+    /* color: var(--primary); */
+}
+
+h2 {
+    font-family: var(--heading-font);
+    margin: 20px 0 8px;
+    /* color: var(--primary); */
+    font-size: 1.5rem;
+}
+
+p,
+li {
+    line-height: 1.45;
+}
+
+.muted {
+    color: var(--muted);
+    font-size: 0.95rem;
+}
+
+.colors {
+    display: flex;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.swatch {
+    width: 88px;
+    height: 56px;
+    border-radius: 6px;
+    color: #fff;
+    display: flex;
+    align-items: flex-end;
+    padding: 8px;
+    font-weight: 600;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+pre {
+    background: #f7f7f7;
+    padding: 12px;
+    border-radius: 6px;
+    overflow: auto;
+}
+
+footer {
+    margin-top: 22px;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+ul {
+    margin: 0 0 0 1.25rem;
+}
+
+/* Wireframe images */
+
+.mobile {
+    max-width: 300px;
+}
+
+.desktop {
+    max-width: 600px;
+}
+
+/*  */
+
+nav {
+    background-color: var(--primary);
+    color: var(--bg);
+}
+
+nav p {
+    text-align: center;
+}
+
+.site {
+    background-color: var(--primary);
+    color: var(--bg);
+    padding-left: 10px;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--accent);
+    border: none;
+    font-family: var(--heading-font);
+    border-radius: 8px;
+}
+
+input[type="submit"] {
+    background-color: var(--button);
+    color: var(--bg);
+    border: none;
+    font-family: var(--heading-font);
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--primary);
+    padding: 5px;
+
+}
+
+.copyright-wrapper {
+    color: var(--bg);
+    text-align: center;
+}
+
+header p {
+    margin: 0;
+    padding: 10px;
+}
