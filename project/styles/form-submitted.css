@@ -1,0 +1,75 @@
+:root {
+    --primary-color: #071737;
+    --secondary-color: #e0a600;
+    --primary-text: #ffffff;
+    --text-active: #e0a600;
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --secondary-text: rgb(162, 162, 162);
+    --dark-text: rgb(109, 109, 109);
+    --card-text: rgb(56, 55, 55);
+    --logo-text: 'Cookie', 'sans-serif';
+    --bottom-panel-height: 68px;
+    --bottom-panel-bg: rgba(7, 23, 55, 0.96);
+    --form-color: #183267;
+    --button-color: #376725c0;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-height: 40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.condolence-submitted-text {
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Back to Guest Book button */
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    background-color: var(--button-color);
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+    min-height: 44px;
+    font-size: 1.5rem;
+    width: 100%;
+    box-shadow: inset 0 3px 6px rgba(0, 0, 0, 0.35);
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+}
+
+.btn:active {
+    background-color: var(--primary-color);
+}
+
+
+
+
+@media (min-width: 37.5rem) {
+
+    .btn {
+        max-width: 20rem;
+    }
+}

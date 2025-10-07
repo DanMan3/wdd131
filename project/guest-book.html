@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlie Kirk — Add a condolence</title>
+    <meta name="description" content="A form for adding condolences to Charlie Kirk's memorial page">
+    <meta name="author" content="Daniel Bennion">
+    <link rel="stylesheet" href="styles/global-styling.css">
+    <link rel="stylesheet" href="styles/guest-book.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/obituary.js" defer></script>
+
+</head>
+
+<body>
+
+    <div class="parent-container">
+        <header>
+            <a href="obituary.html" class="logo-text" aria-label="Return to obituary">Obitria</a>
+            <div class="top-panel"></div>
+        </header>
+
+
+        <main>
+
+            <div class="guest-book">
+
+                <h1>Sign Charlie's Guest Book</h1>
+
+                <form action="form-submitted.html" method="get" class="guest-book-form">
+
+                    <div class="guest-book-form-fields">
+
+                        <div class="name">
+                            <label for="user-name" class="user-name-label">Your Name*</label>
+                            <input type="text" id="user-name" name="user-name" maxlength="30" required>
+                        </div>
+                        <div class="comment">
+                            <label for="comment" class="comment-label">Note*</label>
+                            <textarea id="comment" name="comment" rows="5" maxlength="200" required></textarea>
+                        </div>
+
+                        <input type="submit" value="Publish Condolence" id="publish-condolence">
+
+                    </div>
+                </form>
+
+                <div class="bottom-panel"></div>
+            </div>
+
+        </main>
+
+        <footer>
+            <div class="copyright-wrapper">
+                <p class="copyright">©<span id="current-year" class="current-year"></span></p>
+                <span class="dot-separator">&#x2022;</span>
+                <p class="footer-name">Daniel Bennion Utah, USA</p>
+                <span class="dot-separator">&#x2022;</span>
+                <p class="last-modified">
+                    Last modified: <span id="lastModified" class="last-modified-date"></span>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

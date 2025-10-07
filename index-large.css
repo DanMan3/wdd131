@@ -1,0 +1,171 @@
+:root {
+    --primary-color: #071737;
+    --secondary-color: #e0a600;
+    --primary-text: #ffffff;
+    --text-active: #e0a600;
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --secondary-text: rgb(162, 162, 162);
+    --dark-text: rgb(109, 109, 109);
+    --card-text: rgb(56, 55, 55);
+    --logo-text: 'Cookie', 'sans-serif';
+    --bottom-panel-height: 68px;
+    --bottom-panel-bg: rgba(7, 23, 55, 0.96);
+    --form-color: #183267;
+    --button-color: #376725c0;
+
+}
+
+@media (min-width: 37.5rem) {
+
+
+    .parent-container {
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+    }
+
+
+    /* kirk image */
+    .kirk-img {
+        width: 40%;
+        align-self: center;
+    }
+
+
+    /* Nav */
+    nav {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        padding: .5rem;
+        font-size: 16px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: var(--primary-text);
+    }
+
+    nav a:hover {
+        color: var(--secondary-color);
+        text-decoration: underline;
+    }
+
+    .logo-text {
+        margin-bottom: 10px;
+        color: var(--primary-text);
+        font-family: var(--logo-text);
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .top-panel {
+        background-color: var(--form-color);
+        border-radius: .5rem;
+    }
+
+    .obituary {
+        display: flex;
+        gap: 30px;
+    }
+
+
+    /* Desktop view guest book form */
+
+    .sign-guest-book {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-decoration: none;
+        justify-self: center;
+        align-self: center;
+        padding-top: 3.5rem;
+        padding-bottom: 5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex: 0 0 auto;
+        background-color: var(--form-color);
+        border-radius: 50px;
+    }
+
+    .sign-guest-book a,
+    .sign-guest-book h3 {
+        text-decoration: none;
+        color: var(--primary-text);
+    }
+
+    .btn {
+        background-color: var(--button-color);
+        border-radius: 10px;
+        border: 1px solid var(--secondary-color);
+        margin-left: auto;
+        padding: 5px;
+        font-size: .8rem;
+    }
+
+    .btn:hover {
+        background-color: var(--primary-color);
+    }
+
+
+    /* Guest book entries */
+
+    .guest-book-entries {
+        color: var(--primary-text);
+        display: flex;
+        flex-direction: column;
+        gap: 1.3rem;
+        width: 411px;
+    }
+
+    .guest-book-entry {
+        border-radius: 5px;
+        text-align: unset;
+        border: 1px solid var(--secondary-color);
+        padding: 10px;
+        background-color: var(--button-color);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+
+    .profile-info {
+        display: flex;
+        gap: 10px;
+    }
+
+    .guest-book-entry-date {
+        margin-left: auto;
+        text-align: right;
+        font-style: italic;
+    }
+
+
+    .guest-book-header {
+        text-align: left;
+        margin-left: 150px;
+    }
+
+
+    /* Footer */
+
+    .dot-seperator {
+        display: unset;
+    }
+
+    .copyright-wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 8px;
+        /* color: var(--primary-text); */
+    }
+
+}

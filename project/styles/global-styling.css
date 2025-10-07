@@ -1,0 +1,271 @@
+:root {
+    --primary-color: #071737;
+    --secondary-color: #e0a600;
+    --primary-text: #ffffff;
+    --text-active: #e0a600;
+    --primary-font: 'Oswald', sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+    --secondary-text: rgb(162, 162, 162);
+    --dark-text: rgb(109, 109, 109);
+    --card-text: rgb(56, 55, 55);
+    --logo-text: 'Cookie', 'sans-serif';
+    --bottom-panel-height: 68px;
+    --bottom-panel-bg: rgba(7, 23, 55, 0.96);
+    --form-color: #183267;
+    --button-color: #376725c0;
+}
+
+/* --------------- Global ------------------ */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--secondary-font);
+    color: var(--primary-text);
+}
+
+html {
+    height: 100vh;
+    scrollbar-gutter: stable both-edges;
+
+}
+
+
+body {
+    background-color: var(--primary-color);
+    min-height: 100%;
+    display: grid;
+
+}
+
+
+.parent-container {
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    padding-top: 10px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--primary-font);
+}
+
+/* Remove blue tap highlight on mobile while preserving keyboard focus */
+a,
+button,
+input,
+textarea,
+select,
+label,
+.btn {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Remove outline for touch interactions but keep for keyboard navigation */
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible),
+select:focus:not(:focus-visible) {
+    outline: none;
+}
+
+/* Keep a clear visible focus for keyboard users */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid var(--text-active);
+    outline-offset: 2px;
+}
+
+
+/* ----------------- Nav ---------------- */
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo-text {
+    margin-bottom: 10px;
+    color: var(--primary-text);
+    font-family: var(--logo-text);
+    font-size: 3rem;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+}
+
+
+/* ------------ Footer -------------- */
+
+footer {
+    justify-self: end;
+    margin-top: auto;
+}
+
+.copyright-wrapper {
+    display: flex;
+    gap: 0.1rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 8px;
+}
+
+.dot-separator {
+    display: none;
+}
+
+.footer-name,
+.last-modified,
+.copyright,
+.current-year {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.last-modified-date {
+    font-style: italic;
+}
+
+
+
+/* --------------Mobile nav box overlay -------------- */
+
+@media (max-width: 37.5rem) {
+    .bottom-panel .nav-bar {
+        position: fixed;
+        left: 8px;
+        right: 8px;
+        bottom: env(safe-area-inset-bottom, 12px);
+        height: var(--bottom-panel-height);
+        z-index: 9999;
+        background-color: var(--form-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        padding: 10px 14px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        backdrop-filter: blur(6px);
+    }
+
+
+    .bottom-panel .nav-bar a {
+        color: var(--bottom-panel-text);
+        text-decoration: none;
+        border-radius: 6px;
+        background: transparent;
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .bottom-panel .nav-bar a:hover {
+        background: rgba(255, 255, 255, 0.06);
+    }
+
+    .bottom-panel .nav-bar a:active {
+        color: var(--text-active);
+    }
+
+
+    /* ensure page content isn't hidden behind the panel */
+
+    .parent-container {
+        padding-bottom: calc(var(--bottom-panel-height) + 28px);
+    }
+
+    /* Ensure form doesn't show on mobile view */
+
+    .sign-guest-book {
+        display: none;
+
+    }
+
+}
+
+
+/* ---------- Desktop global -------------- */
+
+@media (min-width: 37.5rem) {
+
+
+    /* Enforce width for desktop views */
+    .parent-container {
+        max-width: 700px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: stretch;
+        height: 100%;
+        width: min(100%, 700px);
+    }
+
+    /* Nav */
+    nav {
+        display: flex;
+        gap: 20px;
+        justify-content: flex-end;
+        padding: .5rem;
+        font-size: 16px;
+    }
+
+    nav a {
+        text-decoration: none;
+    }
+
+    nav a:hover {
+        color: var(--text-active);
+        text-decoration: underline;
+    }
+
+    .logo-text {
+        margin-bottom: 10px;
+        font-family: var(--logo-text);
+        font-size: 2.5rem;
+        text-align: center;
+        display: block;
+        text-decoration: none;
+    }
+
+    .top-panel {
+        background-color: var(--form-color);
+        border-radius: .5rem;
+    }
+
+    .obituary {
+        display: flex;
+        gap: 30px;
+    }
+
+    /* Footer */
+
+    .dot-separator {
+        display: unset;
+    }
+
+    .copyright-wrapper {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        padding: 8px;
+    }
+}
